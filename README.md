@@ -3,6 +3,8 @@
 A Docker image with [Logspout](https://github.com/gliderlabs/logspout) and a [GELF module](https://github.com/micahhausler/logspout-gelf)
 based on the official Logspout Docker image.
 
+The GELF module supports UDP and TCP transports. The default transport is UDP.
+
 ## Setup
 
 The `build.sh` script is copied from https://github.com/gliderlabs/logspout/blob/master/custom/build.sh.
@@ -18,11 +20,22 @@ docker build .
 
 ## Running
 
+Run using UDP:
+
 ```
 docker run \
     -v /var/run/docker.sock:/var/run/docker.sock \
     karlvr/logspout-gelf:latest \
     gelf://<graylog_host>:12201
+```
+
+Run using TCP:
+
+```
+docker run \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    karlvr/logspout-gelf:latest \
+    gelf+tcp://<graylog_host>:12201
 ```
 
 See https://github.com/gliderlabs/logspout for more running information.
