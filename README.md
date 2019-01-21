@@ -1,6 +1,6 @@
 # Logspout + GELF
 
-A Docker image with [Logspout](https://github.com/gliderlabs/logspout) and a [GELF module](https://github.com/micahhausler/logspout-gelf)
+A Docker image with [Logspout](https://github.com/gliderlabs/logspout) and a [GELF module](https://github.com/karlvr/logspout-gelf)
 based on the official Logspout Docker image.
 
 The GELF module supports UDP and TCP transports. The default transport is UDP.
