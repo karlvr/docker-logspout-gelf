@@ -5,11 +5,10 @@ based on the official Logspout Docker image.
 
 ## Setup
 
-The `build.sh` script is copied from https://github.com/gliderlabs/logspout/blob/master/build.sh. A command to fetch the source
-for the GELF module is added.
+The `build.sh` script is copied from https://github.com/gliderlabs/logspout/blob/master/custom/build.sh.
 
 The `modules.go` script is copied from https://github.com/gliderlabs/logspout/blob/master/modules.go and modified
-to include the gelf module.
+to include the GELF module.
 
 ## Building
 
