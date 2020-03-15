@@ -158,3 +158,10 @@ docker run \
     karlvr/logspout-gelf:latest \
     gelf+tls://<graylog_host>:12201
 ```
+
+## Publishing
+
+```shell
+docker build . -t karlvr/logspout-gelf
+docker push karlvr/logspout-gelf
+```
