@@ -162,6 +162,6 @@ docker run \
 ## Publishing
 
 ```shell
-docker build . -t karlvr/logspout-gelf
-docker push karlvr/logspout-gelf
+make build
+make push
 ```
